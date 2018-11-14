@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ServiceDemo</string>
+    <string name="startService">Start Service</string>
+    <string name="stopService">Stop Service</string>
+    <string name="bindService">Bind Service</string>
+    <string name="unbindService">Unbind Service</string>
+    <string name="getRandomNumber">Get random number</string>
+    <string name="startIntentService">Start Intent Service</string>
+    <string name="stopIntentService">Stop Intent Service</string>
+</resources>

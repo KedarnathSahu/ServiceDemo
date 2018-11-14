@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:layout_margin="20dp"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewthreadCount"
+        android:layout_alignParentTop="true"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonThreadStarter"
+        android:layout_below="@+id/textViewthreadCount"
+        android:text="@string/startService"
+        android:onClick="startService"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonStopthread"
+        android:layout_below="@+id/buttonThreadStarter"
+        android:layout_marginTop="10dp"
+        android:text="@string/stopService"
+        android:onClick="stopService"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonBindService"
+        android:layout_below="@+id/buttonStopthread"
+        android:text="@string/bindService"
+        android:layout_marginTop="10dp"
+        android:onClick="bindService"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonUnBindService"
+        android:layout_below="@+id/buttonBindService"
+        android:text="@string/unbindService"
+        android:layout_marginTop="10dp"
+        android:onClick="unbindService"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonGetRandomNumber"
+        android:layout_below="@+id/buttonUnBindService"
+        android:text="@string/getRandomNumber"
+        android:layout_marginTop="10dp"
+        android:onClick="getRandomNumber"/>
+
+    <Button
+        android:id="@+id/startIntentService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonGetRandomNumber"
+        android:layout_marginTop="10dp"
+        android:text="@string/startIntentService"
+        android:onClick="startIntentService"/>
+
+    <Button
+        android:id="@+id/stopIntentService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startIntentService"
+        android:layout_marginTop="10dp"
+        android:text="@string/stopIntentService"
+        android:onClick="stopIntentService"/>
+
+</RelativeLayout>
