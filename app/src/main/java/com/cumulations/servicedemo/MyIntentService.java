@@ -26,6 +26,12 @@ public class MyIntentService extends IntentService {
     }
 
     @Override
+    public int onStartCommand(@Nullable Intent intent, int flags, int startId) {
+        Log.i("@@@","In onStartCommand");
+        return super.onStartCommand(intent, flags, startId);
+    }
+
+    @Override
     public void onDestroy() {
         super.onDestroy();
         stopRandomNumberGenerator();
